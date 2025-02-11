@@ -47,6 +47,12 @@
                                 <rect key="frame" x="194" y="224" width="215" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4tZ-DF-7t8">
+                                <rect key="frame" x="56" y="436" width="142" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemMintColor"/>
@@ -55,6 +61,7 @@
                         <outlet property="textInfoGuide" destination="I0d-kZ-Ybo" id="xNK-M9-XQm"/>
                         <outlet property="userChangeCurrencyIn" destination="k5q-Id-x1U" id="xKS-W9-InV"/>
                         <outlet property="userChangeCurrencyOut" destination="R3j-Il-Xst" id="jhO-7I-IAW"/>
+                        <outlet property="userInfoSum" destination="4tZ-DF-7t8" id="vae-fJ-H2y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
