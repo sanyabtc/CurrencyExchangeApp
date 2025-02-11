@@ -7,10 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
+final class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
+    private let currencys = ["USD", "RUB", "EURO"]
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return currencys.count
@@ -36,18 +37,16 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         userInfoSum.placeholder = "Введите сумму"
        }
         
-    @IBOutlet weak var textInfoGuide: UITextView!
+    @IBOutlet private weak var textInfoGuide: UITextView!
     
     
-    @IBOutlet weak var userChangeCurrencyIn: UIPickerView!
+    @IBOutlet private weak var userChangeCurrencyIn: UIPickerView!
     
     
-    @IBOutlet weak var userChangeCurrencyOut: UIPickerView!
+    @IBOutlet private weak var userChangeCurrencyOut: UIPickerView!
     
     
     
-    @IBOutlet weak var userInfoSum: UITextField!
+    @IBOutlet private weak var userInfoSum: UITextField!
     
-    
-    let currencys = ["USD", "RUB", "EURO"]
 }
