@@ -24,12 +24,19 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         super.viewDidLoad()
         userChangeCurrencyIn.delegate = self
         userChangeCurrencyIn.dataSource = self
+        userChangeCurrencyOut.delegate = self
+        userChangeCurrencyOut.dataSource = self
        }
         
     @IBOutlet weak var textInfoGuide: UITextView!
     
     
     @IBOutlet weak var userChangeCurrencyIn: UIPickerView!
+    
+    
+    @IBOutlet weak var userChangeCurrencyOut: UIPickerView!
+    
+    
     
     let currencys = ["USD", "RUB", "EURO"]
 }
